@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Événements — Michelin Givisiez 100 ans</title>
+<meta name="description" content="Calendrier des célébrations du centenaire : portes ouvertes, cérémonie officielle et exposition rétrospective."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Hanken+Grotesk:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/css/theme.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface antialiased pb-24 md:pb-0">
+
+<!-- Barre de navigation -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 bg-surface-container-lowest shadow-[0_4px_20px_rgba(39,80,155,0.08)]">
+  <a class="flex items-center gap-3" href="index.html">
+    <span class="material-symbols-outlined text-primary">celebration</span>
+    <span class="font-headline-md text-headline-md text-primary tracking-tight">Michelin Givisiez 100</span>
+  </a>
+  <nav class="hidden md:flex gap-8 items-center" aria-label="Navigation principale">
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="index.html">Accueil</a>
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="histoire.html">Histoire</a>
+    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-0.5" href="evenements.html" aria-current="page">Événements</a>
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="pt-24 pb-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+
+  <!-- Héro -->
+  <section class="mb-stack-lg md:mb-section-padding reveal">
+    <div class="relative overflow-hidden rounded-xl bg-primary-container p-8 md:p-16 text-white shadow-lg">
+      <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none" aria-hidden="true">
+        <span class="material-symbols-outlined text-[200px]">auto_awesome</span>
+      </div>
+      <div class="relative z-10 max-w-2xl">
+        <div class="inline-block px-3 py-1 rounded-full bg-anniversary-gold text-on-secondary-fixed font-label-bold text-label-sm mb-4">CENTENAIRE 1924 — 2024</div>
+        <h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl mb-4">Calendrier des Célébrations</h1>
+        <p class="font-body-lg text-body-lg text-on-primary-container max-w-lg">Rejoignez-nous pour une série d'événements exclusifs marquant un siècle d'innovation et d'engagement industriel au cœur de Givisiez.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liste des événements -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter" aria-label="Événements du centenaire">
+
+    <!-- Journée portes ouvertes -->
+    <article class="group bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(39,80,155,0.05)] overflow-hidden border-t-2 border-secondary-fixed hover:shadow-lg transition-all duration-300 flex flex-col reveal">
+      <div class="h-48 overflow-hidden relative">
+        <img data-remote class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+             alt="Intérieur du site de production de Givisiez"
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKwlR1ozAmEO7qtdSrrEOuQE1ZgGCK3f-Kfi0dem9tcJkWAyOPysLyk6Wx9ah1Aq5LajI3gl-JX_ldvNynhGQPBtaskuhMCYgOcp530vzWjBTbYa4l8dRhD4I83TEEaEC1yET04rqAo5031JI5w_4EvrNOGQXu68He7x5NCLnp8_Tgto4MjD6RxE4ilxto3rag_Fzmt83tdD6cxLZL09ne7vsL_lBC_UD3aUqNocY5dszqjL3sN8g"/>
+        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg shadow-sm">
+          <span class="font-label-bold text-label-bold text-primary">15 SEPT 2024</span>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="material-symbols-outlined icon-fill text-anniversary-gold text-sm">star</span>
+          <span class="font-label-bold text-label-sm font-bold text-outline tracking-widest uppercase">Public</span>
+        </div>
+        <h2 class="font-headline-md text-headline-md text-primary mb-3">Journée portes ouvertes</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Découvrez les coulisses de notre site historique. Une immersion unique au cœur de nos lignes de production et de notre savoir-faire séculaire.</p>
+        <button type="button" data-open-modal="modal-inscription" data-event="Journée portes ouvertes" data-event-badge="Journée portes ouvertes"
+                class="w-full py-3 bg-primary text-white font-label-bold text-label-bold rounded-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2">
+          S'inscrire
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Cérémonie officielle -->
+    <article class="group bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(39,80,155,0.05)] overflow-hidden border-t-2 border-anniversary-gold hover:shadow-lg transition-all duration-300 flex flex-col reveal">
+      <div class="h-48 overflow-hidden relative">
+        <img data-remote class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+             alt="Salle de gala décorée en bleu et or pour la cérémonie du centenaire"
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--SK8_SEDgje_AQvUNwDWr8vukzjUmtScGGjp8GZyjTUQ6k2odcRKygVBfxB2S8ng3E1cYj7gP8gPobXmiPOxmEC4-wpvAF-8-OXicIfT6RtmxkYecC4nvvOWv_SdZrApS-lfD8NLrJe4UV0hZ1YUIrG0gzj1VIcyZ49GPALzlmjt1_tXxud-e3vDR12P2ilmN77_ZF_HSmFj5-gKZQgoHL2iE5zTr7sTb9scjLffC_vfYAxSans"/>
+        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg shadow-sm">
+          <span class="font-label-bold text-label-bold text-primary">22 OCT 2024</span>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="material-symbols-outlined icon-fill text-anniversary-gold text-sm">workspace_premium</span>
+          <span class="font-label-bold text-label-sm font-bold text-outline tracking-widest uppercase">Sur Invitation</span>
+        </div>
+        <h2 class="font-headline-md text-headline-md text-primary mb-3">Cérémonie officielle</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Un moment solennel en présence des autorités et partenaires pour célébrer l'ancrage de Michelin à Givisiez et ses perspectives d'avenir.</p>
+        <button type="button" data-open-modal="modal-inscription" data-event="Cérémonie officielle" data-event-badge="Cérémonie officielle"
+                class="w-full py-3 bg-anniversary-gold text-on-secondary-fixed font-label-bold text-label-bold rounded-lg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2">
+          Réserver ma place
+          <span class="material-symbols-outlined text-lg">confirmation_number</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Exposition rétrospective -->
+    <article class="group bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_rgba(39,80,155,0.05)] overflow-hidden border-t-2 border-primary hover:shadow-lg transition-all duration-300 flex flex-col reveal">
+      <div class="h-48 overflow-hidden relative">
+        <img data-remote class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+             alt="Galerie d'exposition présentant des affiches et objets historiques"
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUmF2sTBIsPO8YeaB20J8cboojcC6954Ip6tEVjyTS_NELCHSnigH3Hr3YH3hNijGbhhhDbL1tcidT83bxKBG4wAIW8-X2UEcckoGodsdH229SLKpwSKOQfJQAJovyJmp25Sf8gsfJZ8-P_aLoVMSOch0-7JVHYSCLe_3cgHSB4Qntuq7SWmGeviz3k8RaBi80LUs-aCs0Hy7QIDI8IlRzVTOSKbWINn1AB80a4aIMX6desTQKuac"/>
+        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg shadow-sm">
+          <span class="font-label-bold text-label-bold text-primary">NOV – DÉC 2024</span>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col flex-grow">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="material-symbols-outlined icon-fill text-anniversary-gold text-sm">history</span>
+          <span class="font-label-bold text-label-sm font-bold text-outline tracking-widest uppercase">Exposition</span>
+        </div>
+        <h2 class="font-headline-md text-headline-md text-primary mb-3">Exposition rétrospective</h2>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Parcourez 100 ans d'histoire à travers des archives inédites, des objets cultes et des témoignages qui ont façonné l'identité de notre site.</p>
+        <button type="button" data-open-modal="modal-expo"
+                class="w-full py-3 border border-primary text-primary font-label-bold text-label-bold rounded-lg hover:bg-primary/5 active:scale-95 transition-all flex items-center justify-center gap-2">
+          Consulter les dates
+          <span class="material-symbols-outlined text-lg">calendar_month</span>
+        </button>
+      </div>
+    </article>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="mt-section-padding bg-surface-gray rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+    <div class="text-center md:text-left">
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Ne manquez aucun rendez-vous</h2>
+      <p class="text-on-surface-variant font-body-md text-body-md">Inscrivez-vous pour recevoir les informations détaillées sur chaque événement.</p>
+    </div>
+    <form data-newsletter class="flex w-full md:w-auto gap-3" novalidate>
+      <label class="sr-only" for="nl-email">Votre e-mail</label>
+      <input id="nl-email" name="email" class="field flex-grow md:w-64" placeholder="Votre e-mail" type="email" required/>
+      <button type="submit" class="px-6 py-3 bg-primary text-white font-label-bold text-label-bold rounded-lg whitespace-nowrap hover:opacity-90 active:scale-95 transition-all">S'inscrire</button>
+    </form>
+  </section>
+
+</main>
+
+<!-- Pied de page -->
+<footer class="border-t border-outline-variant bg-surface-container-lowest">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-on-surface-variant text-label-sm font-label-sm">
+    <p>© 1924–2024 Michelin Givisiez — Portail du centenaire</p>
+    <p>Rte Jo Siffert 36, 1762 Givisiez · <a class="text-primary hover:underline" href="tel:0264677111">026 467 71 11</a></p>
+  </div>
+</footer>
+
+<!-- Navigation mobile -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface border-t border-outline-variant shadow-[0_-4px_16px_rgba(39,80,155,0.05)] rounded-t-xl" aria-label="Navigation mobile">
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="index.html">
+    <span class="material-symbols-outlined">home</span>
+    <span class="font-label-sm text-label-sm">Accueil</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="histoire.html">
+    <span class="material-symbols-outlined">history_edu</span>
+    <span class="font-label-sm text-label-sm">Histoire</span>
+  </a>
+  <a class="flex flex-col items-center justify-center bg-primary-container text-white rounded-full px-4 py-1 active:scale-90 transition-transform" href="evenements.html" aria-current="page">
+    <span class="material-symbols-outlined icon-fill">event</span>
+    <span class="font-label-sm text-label-sm">Événements</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="contact.html">
+    <span class="material-symbols-outlined">contact_support</span>
+    <span class="font-label-sm text-label-sm">Contact</span>
+  </a>
+</nav>
+
+<!-- Modale : inscription -->
+<div id="modal-inscription" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-inscription-title">
+  <div class="modal-panel p-6 md:p-8">
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="inline-block px-3 py-1 rounded-full bg-gold-light text-tertiary font-label-bold text-label-sm mb-2">CENTENAIRE</span>
+        <h2 id="modal-inscription-title" class="font-headline-md text-headline-md text-primary">Inscription à un événement</h2>
+      </div>
+      <button type="button" data-close-modal class="text-on-surface-variant hover:text-on-surface p-1" aria-label="Fermer">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <form id="form-inscription" class="space-y-4" novalidate>
+      <div>
+        <label class="field-label" for="ins-event">Événement</label>
+        <select id="ins-event" name="event" class="field">
+          <option>Journée portes ouvertes</option>
+          <option>Cérémonie officielle</option>
+          <option>Exposition rétrospective</option>
+          <option>Journée Portes Ouvertes Famille</option>
+        </select>
+      </div>
+      <div>
+        <label class="field-label" for="ins-name">Nom et prénom</label>
+        <input id="ins-name" name="name" type="text" class="field" placeholder="Marie Dupont" autocomplete="name" required/>
+      </div>
+      <div>
+        <label class="field-label" for="ins-email">E-mail</label>
+        <input id="ins-email" name="email" type="email" class="field" placeholder="marie.dupont@exemple.ch" autocomplete="email" required/>
+      </div>
+      <div>
+        <label class="field-label" for="ins-guests">Nombre d'accompagnants</label>
+        <select id="ins-guests" name="guests" class="field">
+          <option value="0">Aucun</option><option>1</option><option>2</option><option>3</option><option value="4">4 et plus</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full py-3 bg-primary text-white font-label-bold text-label-bold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined">how_to_reg</span>
+        Confirmer mon inscription
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Modale : dates de l'exposition -->
+<div id="modal-expo" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-expo-title">
+  <div class="modal-panel p-6 md:p-8">
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="inline-block px-3 py-1 rounded-full bg-gold-light text-tertiary font-label-bold text-label-sm mb-2">EXPOSITION RÉTROSPECTIVE</span>
+        <h2 id="modal-expo-title" class="font-headline-md text-headline-md text-primary">Dates et horaires</h2>
+      </div>
+      <button type="button" data-close-modal class="text-on-surface-variant hover:text-on-surface p-1" aria-label="Fermer">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <ul class="space-y-3 text-body-md text-on-surface mb-6">
+      <li class="flex justify-between border-b border-outline-variant pb-2"><span>Vernissage</span><span class="font-bold">Ven 8 nov · 18:00</span></li>
+      <li class="flex justify-between border-b border-outline-variant pb-2"><span>Ouverture au public</span><span class="font-bold">Sam 9 nov – Dim 22 déc</span></li>
+      <li class="flex justify-between border-b border-outline-variant pb-2"><span>Mardi – Vendredi</span><span class="font-bold">14:00 – 18:00</span></li>
+      <li class="flex justify-between border-b border-outline-variant pb-2"><span>Samedi – Dimanche</span><span class="font-bold">10:00 – 17:00</span></li>
+      <li class="flex justify-between"><span>Entrée</span><span class="font-bold text-primary">Libre et gratuite</span></li>
+    </ul>
+    <button type="button" data-open-modal="modal-inscription" data-event="Exposition rétrospective"
+            class="w-full py-3 bg-primary text-white font-label-bold text-label-bold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+      <span class="material-symbols-outlined">notifications_active</span>
+      Être notifié·e du vernissage
+    </button>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

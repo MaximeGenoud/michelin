@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Notre Histoire — Michelin Givisiez 100 ans</title>
+<meta name="description" content="Un siècle de progrès à Givisiez : la frise chronologique du site Michelin, de 1924 à 2024."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Hanken+Grotesk:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="assets/css/theme.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-surface antialiased pb-24 md:pb-0" style="scroll-behavior:smooth">
+
+<!-- Barre de navigation -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 bg-surface-container-lowest shadow-[0_4px_20px_rgba(39,80,155,0.08)]">
+  <a class="flex items-center gap-3" href="index.html">
+    <span class="material-symbols-outlined text-primary">celebration</span>
+    <span class="font-headline-md text-headline-md text-primary tracking-tight">Michelin Givisiez 100</span>
+  </a>
+  <nav class="hidden md:flex gap-8 items-center" aria-label="Navigation principale">
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="index.html">Accueil</a>
+    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-0.5" href="histoire.html" aria-current="page">Histoire</a>
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="evenements.html">Événements</a>
+    <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="pt-24 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+
+  <!-- Héro -->
+  <section class="mb-section-padding text-center reveal">
+    <div class="inline-block px-4 py-1 mb-stack-md rounded-full bg-gold-light border border-anniversary-gold text-tertiary font-label-bold text-label-bold">100 ANS D'EXCELLENCE</div>
+    <h1 class="font-display-xl-mobile text-display-xl-mobile md:font-display-xl md:text-display-xl text-primary mb-stack-lg max-w-4xl mx-auto">Un Siècle de Progrès à Givisiez</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Depuis 1924, le site de Givisiez incarne l'esprit d'innovation de Michelin. Découvrez l'odyssée technologique et humaine qui a façonné notre ancrage local au cœur de la Suisse.</p>
+  </section>
+
+  <!-- Bannière visuelle -->
+  <div class="relative w-full aspect-[21/9] mb-section-padding rounded-xl overflow-hidden shadow-sm group reveal">
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent z-10"></div>
+    <img data-remote class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+         alt="Photographie historique du site de Givisiez au début du XXe siècle"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbSRkRAgF-Z1l7GJY3aam2cOF0azBIpllS2iT6fou4OJslJ4tTXNlrcejBg4rKYz1puXYxVDxYzFoeN-G-t3sr7faxfmkxAijgSsEHSWWNH2i-5Z5R_cb6J8pgnGh0Tzhy9KFPe1wkev77SIDBJWq530hBRSB2Mw6drPL8cW4Y7ndxhcIcI-1lolyFVJf9MrKoZYt1lK8EBAzdXpOnRcAtqHsa2xgdkzsl5AGi-k0gGr3T7Td1iNU"/>
+    <div class="absolute bottom-stack-lg left-stack-lg z-20 text-white">
+      <span class="font-label-bold text-label-bold text-secondary-fixed uppercase tracking-widest">Patrimoine Industriel</span>
+      <p class="font-headline-lg text-headline-lg text-white">Fondation du site de Givisiez</p>
+    </div>
+  </div>
+
+  <!-- Frise chronologique -->
+  <section class="relative timeline-track space-y-section-padding pb-section-padding" aria-label="Frise chronologique">
+
+    <!-- 1924 -->
+    <article class="flex flex-col md:flex-row items-center gap-gutter relative reveal">
+      <div class="flex-1 md:text-right pl-16 md:pl-0">
+        <span class="font-display-xl text-display-xl text-anniversary-gold opacity-50 block md:mb-2">1924</span>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">L'Origine du Succès</h2>
+        <p class="text-body-md text-on-surface-variant max-w-md md:ml-auto">Ouverture officielle du centre de distribution et de fabrication à Givisiez, marquant l'arrivée durable du Groupe Michelin dans le canton de Fribourg.</p>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-primary border-4 border-white shadow-sm z-10 hidden md:flex items-center justify-center shrink-0">
+        <div class="w-2 h-2 rounded-full bg-white"></div>
+      </div>
+      <div class="flex-1 w-full pl-16 md:pl-0">
+        <div class="aspect-video bg-surface-gray rounded-xl overflow-hidden shadow-sm">
+          <img data-remote class="w-full h-full object-cover" alt="Ouvriers assemblant des pneus dans le premier atelier de Givisiez, années 1920"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD-DWa7xIxbmCrXJ7SRUJFKxTo978nQLAD3oGaB3MSnlJwmf2ftkX2dJ9HzKCMJNrjTu4vLTUTVSmvM0OzS1f8k099-QIOa0iyQuI2-0KUTUTTnEL-d8sDmdgX38-ZTqY9c_t9et9l_gpXn_tndPut25z5gMO036_aQ9AFDFDHMcLHQHpNa9o4T7yQcGtOh9Ft15W3W6mm3jP-PNSdyrrD0E6Jja0iK7HoDxV8L5ousl4dSFHi4DI"/>
+        </div>
+      </div>
+    </article>
+
+    <!-- 1950 -->
+    <article class="flex flex-col md:flex-row-reverse items-center gap-gutter relative reveal">
+      <div class="flex-1 md:text-left pl-16 md:pl-0">
+        <span class="font-display-xl text-display-xl text-anniversary-gold opacity-50 block md:mb-2">1950</span>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">Expansion Après-Guerre</h2>
+        <p class="text-body-md text-on-surface-variant max-w-md">Modernisation des infrastructures pour répondre à la demande croissante de mobilité en Europe. Givisiez devient un hub logistique stratégique.</p>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-primary border-4 border-white shadow-sm z-10 hidden md:flex items-center justify-center shrink-0">
+        <div class="w-2 h-2 rounded-full bg-white"></div>
+      </div>
+      <div class="flex-1 w-full pl-16 md:pl-0">
+        <div class="aspect-video bg-surface-gray rounded-xl overflow-hidden shadow-sm">
+          <img data-remote class="w-full h-full object-cover" alt="Flotte de camions de livraison Michelin devant le site de Givisiez dans les années 1950"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwgvretawD-ImcMdyshv1UkGGsmv2ByWffRX8J0kE-uMTIUvMUN3K8h0WYutE3HemG41GKOotOHIevE96hoqXDkVx_roDUKaDQB4iDto49aUEWoH9djM46ot5nY7-Kle4O9Y1y4zrg5-Icr5UnI5Vx5Qq6oeJ-o220KoqpSBOhWZOzuLJIWgyEzY28Q6u_Y6sdUVmVndR5K8v5lq3C18rQ6waCFPao85Eu7yVtRM2Ckov8K5fntIo"/>
+        </div>
+      </div>
+    </article>
+
+    <!-- 1990 -->
+    <article class="flex flex-col md:flex-row items-center gap-gutter relative reveal">
+      <div class="flex-1 md:text-right pl-16 md:pl-0">
+        <span class="font-display-xl text-display-xl text-anniversary-gold opacity-50 block md:mb-2">1990</span>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">L'Innovation au Cœur</h2>
+        <p class="text-body-md text-on-surface-variant max-w-md md:ml-auto">Introduction de nouvelles technologies de recyclage et d'optimisation de la chaîne logistique, pionnières dans le secteur industriel suisse.</p>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-primary border-4 border-white shadow-sm z-10 hidden md:flex items-center justify-center shrink-0">
+        <div class="w-2 h-2 rounded-full bg-white"></div>
+      </div>
+      <div class="flex-1 w-full pl-16 md:pl-0">
+        <div class="aspect-video bg-surface-gray rounded-xl overflow-hidden shadow-sm">
+          <img data-remote class="w-full h-full object-cover" alt="Laboratoire de tests moderne du site de Givisiez à la fin des années 1990"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Fm6cazB31Ys9XjKllWZcMcV-tfAycaPli-LSLHanYrPCMnC-KqlggpGSzKAlSqGeQlTmLCaQu9vw3bpQrv3DmGkVW2stJlOxpZvi55qhZXJZzo4H0GzYt2tZg7I2IhZlgVtUyRhbWKfGXD79dLjnigo5yjej1vvZjTPfUfB9toSYySbpa7y1CPIMSlppQXz8FkIadH86EZv-mLyHhCeYISCw2X8qKAzuQtzzvQds9XvXVBI5KHM"/>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2024 -->
+    <article class="flex flex-col md:flex-row-reverse items-center gap-gutter relative reveal">
+      <div class="flex-1 md:text-left pl-16 md:pl-0">
+        <span class="font-display-xl text-display-xl text-anniversary-gold opacity-50 block md:mb-2">2024</span>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">Un Siècle de Confiance</h2>
+        <p class="text-body-md text-on-surface-variant max-w-md">Célébration du centenaire avec un engagement renouvelé pour la durabilité et l'excellence, ancré dans la communauté locale de Givisiez.</p>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-anniversary-gold border-4 border-white shadow-sm z-10 hidden md:flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined icon-fill text-white text-sm">star</span>
+      </div>
+      <div class="flex-1 w-full pl-16 md:pl-0">
+        <div class="aspect-video bg-surface-gray rounded-xl overflow-hidden shadow-lg border-2 border-anniversary-gold">
+          <img data-remote class="w-full h-full object-cover" alt="Le site de Givisiez aujourd'hui, décoré pour le centenaire au coucher du soleil"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjRIOiasZi_jjtSqWLOEwOU_-LrKrv5krkp6U7NEWqDtZRLLRoOp7caH4h_ItB3Pj1X4qajp4jzrGQLoJTin1Eb_q3-xwJ3i939dkYcwRrfj2WXO3xf5mfR4TA20nrudahPoh6ebQsb98RSLgN16u4CLK2TFuqGNJ5kxEN0uyIlAy2UWHK52d8OUDGk0BaUHju_1KP3rgGAaaBM73x6vq2eTMiHLdUfXXKVuoxK8ivMoznDriJJpE"/>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Appel à contribution -->
+  <section class="bg-primary text-on-primary rounded-2xl p-stack-lg md:p-section-padding text-center shadow-xl mb-section-padding relative overflow-hidden reveal">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32" aria-hidden="true"></div>
+    <div class="relative z-10">
+      <h2 class="font-headline-lg text-headline-lg mb-stack-md">Contribuez à notre histoire</h2>
+      <p class="font-body-md text-body-md opacity-90 max-w-xl mx-auto mb-stack-lg">Vous possédez des archives ou des anecdotes sur le site de Givisiez ? Partagez vos souvenirs pour enrichir notre exposition commémorative.</p>
+      <button type="button" data-open-modal="modal-souvenir" class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-8 py-3 rounded-xl shadow-md hover:opacity-90 active:scale-95 transition-all">
+        Partager un souvenir
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- Pied de page -->
+<footer class="border-t border-outline-variant bg-surface-container-lowest">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-on-surface-variant text-label-sm font-label-sm">
+    <p>© 1924–2024 Michelin Givisiez — Portail du centenaire</p>
+    <p>Rte Jo Siffert 36, 1762 Givisiez · <a class="text-primary hover:underline" href="tel:0264677111">026 467 71 11</a></p>
+  </div>
+</footer>
+
+<!-- Navigation mobile -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface border-t border-outline-variant shadow-[0_-4px_16px_rgba(39,80,155,0.05)] rounded-t-xl" aria-label="Navigation mobile">
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="index.html">
+    <span class="material-symbols-outlined">home</span>
+    <span class="font-label-sm text-label-sm">Accueil</span>
+  </a>
+  <a class="flex flex-col items-center justify-center bg-primary-container text-white rounded-full px-4 py-1 active:scale-90 transition-transform" href="histoire.html" aria-current="page">
+    <span class="material-symbols-outlined icon-fill">history_edu</span>
+    <span class="font-label-sm text-label-sm">Histoire</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="evenements.html">
+    <span class="material-symbols-outlined">event</span>
+    <span class="font-label-sm text-label-sm">Événements</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-1 transition-colors" href="contact.html">
+    <span class="material-symbols-outlined">contact_support</span>
+    <span class="font-label-sm text-label-sm">Contact</span>
+  </a>
+</nav>
+
+<!-- Modale : partager un souvenir -->
+<div id="modal-souvenir" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-souvenir-title">
+  <div class="modal-panel p-6 md:p-8">
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="inline-block px-3 py-1 rounded-full bg-gold-light text-tertiary font-label-bold text-label-sm mb-2">100 ANS DE MÉMOIRE</span>
+        <h2 id="modal-souvenir-title" class="font-headline-md text-headline-md text-primary">Partager un souvenir</h2>
+      </div>
+      <button type="button" data-close-modal class="text-on-surface-variant hover:text-on-surface p-1" aria-label="Fermer">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <form id="form-souvenir" class="space-y-4" novalidate>
+      <div>
+        <label class="field-label" for="mem-name">Nom et prénom</label>
+        <input id="mem-name" name="name" type="text" class="field" placeholder="Jean Bersier" autocomplete="name" required/>
+      </div>
+      <div>
+        <label class="field-label" for="mem-story">Votre souvenir ou anecdote</label>
+        <textarea id="mem-story" name="story" rows="5" class="field" placeholder="Mon grand-père a travaillé sur le site dès 1952…" required></textarea>
+      </div>
+      <p class="text-label-sm font-label-sm text-on-surface-variant">Photos et documents pourront être remis à l'accueil du site ou envoyés après validation de votre message.</p>
+      <button type="submit" class="w-full py-3 bg-anniversary-gold text-on-secondary-fixed font-label-bold text-label-bold rounded-lg hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined">volunteer_activism</span>
+        Envoyer mon souvenir
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
