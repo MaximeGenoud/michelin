@@ -1,0 +1,121 @@
+/* ============ Michelin Givisiez 100 — styles partagés ============ */
+
+body { min-height: max(100dvh, 640px); }
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+.icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+.pb-safe { padding-bottom: calc(0.5rem + env(safe-area-inset-bottom)); }
+
+.celebratory-gradient { background: linear-gradient(135deg, #004a83 0%, #0062ab 100%); }
+
+.gold-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.12), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.bento-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.bento-card:active { transform: scale(0.98); }
+
+/* Timeline (page Histoire) */
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #0062ab;
+  opacity: 0.2;
+}
+@media (max-width: 768px) {
+  .timeline-track::before { left: 20px; }
+}
+
+/* Apparition au défilement */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .gold-shimmer { animation: none; }
+}
+
+/* Modales */
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(27, 28, 28, 0.55);
+  backdrop-filter: blur(2px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  opacity: 0; pointer-events: none; transition: opacity .2s ease;
+}
+.modal-backdrop.open { opacity: 1; pointer-events: auto; }
+.modal-panel {
+  background: #ffffff; border-radius: 1rem;
+  width: 100%; max-width: 480px; max-height: 90dvh; overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(39, 80, 155, 0.25);
+  transform: translateY(16px) scale(.98); transition: transform .2s ease;
+}
+.modal-backdrop.open .modal-panel { transform: none; }
+
+/* Toasts */
+#toast-root {
+  position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%);
+  z-index: 100; display: flex; flex-direction: column; gap: 8px; align-items: center;
+  pointer-events: none; width: min(92vw, 420px);
+}
+.toast {
+  pointer-events: auto;
+  display: flex; align-items: center; gap: 10px;
+  background: #1b1c1c; color: #f2f0f0;
+  border-radius: 0.75rem; padding: 12px 18px;
+  font: 500 14px/20px Inter, sans-serif;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  animation: toast-in .25s ease;
+  width: 100%;
+}
+.toast.success { background: #0f5132; }
+.toast.error { background: #93000a; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+/* Champs de formulaire */
+.field {
+  width: 100%;
+  border: 1px solid #c1c7d3; border-radius: 0.5rem;
+  padding: 12px 14px; font: 400 16px/24px Inter, sans-serif;
+  color: #1b1c1c; background: #fff; outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field:focus { border-color: #004a83; box-shadow: 0 0 0 3px rgba(0, 74, 131, 0.15); }
+.field-label {
+  display: block; margin-bottom: 6px;
+  font: 700 13px/18px Inter, sans-serif; letter-spacing: .04em;
+  color: #414751; text-transform: uppercase;
+}
+
+/* Accessibilité clavier */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid rgba(0, 98, 171, 0.55);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Repli élégant si une image distante ne charge pas */
+img.img-fallback {
+  object-fit: cover;
+  background: linear-gradient(135deg, #d3e4ff 0%, #F9F1D7 100%);
+}
